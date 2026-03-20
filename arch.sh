@@ -1,4 +1,4 @@
-sudo pacman -Syu ghostty hyprland hyprshot waybar tofi cliphist swaync hyprlock hyprpaper wlogout starship dolphin xdg-desktop-portal-hyprland hyprpolkitagent noto-fonts-emoji noto-fonts-cjk pavucontrol adw-gtk3 adw-gtk-theme qt5-wayland qt6-wayland nwg-look Qt5 Qt6 Settings Kvantum breeze-icons zathura archlinux-xdg-menu nvidia-open nvidia-settings nvidia-container-toolkit pipewire wireplumber pamixer brightnessctl ttf-cascadia-code-nerd ttf-cascadia-mono-nerd ttf-fira-code ttf-fira-mono ttf-fira-sans ttf-firacode-nerd ttf-iosevka-nerd ttf-iosevkaterm-nerd ttf-jetbrains-mono-nerd ttf-jetbrains-mono ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono sddm nano bluez blueman networkmanager
+sudo pacman -Syu ghostty hyprland hyprshot waybar wofi cliphist swaync hyprlock hyprpaper wlogout starship nautilus xdg-desktop-portal-hyprland hyprpolkitagent noto-fonts-emoji noto-fonts-cjk pavucontrol adw-gtk3 adw-gtk-theme qt5-wayland qt6-wayland nwg-look Qt5 Qt6 Settings archlinux-xdg-menu nvidia-open nvidia-settings nvidia-container-toolkit pipewire wireplumber pamixer brightnessctl ttf-cascadia-code-nerd ttf-cascadia-mono-nerd ttf-fira-code ttf-fira-mono ttf-fira-sans ttf-firacode-nerd ttf-iosevka-nerd ttf-iosevkaterm-nerd ttf-jetbrains-mono-nerd ttf-jetbrains-mono ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono sddm nano bluez blueman networkmanager
 sudo enable --now sddm.service 
 
 sudo pacman -Syu libvirt qemu-kvm qemu-system-x86 virt-manager virt-install ovmf libguestfs dnsmasq
@@ -17,7 +17,7 @@ git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
 makepkg -si
 
-yay -S visual-studio-code-bin google-chrome ttf-ms-win11-auto openta    etdriver solaar kvantum-theme-catppuccin-git catppuccin-cursors-mocha
+yay -S visual-studio-code-bin google-chrome ttf-ms-win11-auto openta    etdriver solaar kvantum-theme-catppuccin-git catppuccin-cursors-mocha catppuccin-gtk-theme-mocha
 
 sudo usermod -aG docker $user
 sudo systemctl enable --now opentabletdriver.service
