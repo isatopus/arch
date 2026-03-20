@@ -17,7 +17,7 @@ git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
 makepkg -si
 
-yay -S visual-studio-code-bin google-chrome ttf-ms-win11-auto openta    etdriver solaar
+yay -S visual-studio-code-bin google-chrome ttf-ms-win11-auto openta    etdriver solaar kvantum-theme-catppuccin-git
 
 sudo usermod -aG docker $user
 sudo systemctl enable --now opentabletdriver.service

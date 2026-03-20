@@ -30,6 +30,6 @@ for dir in "${CONFIG_DIRS[@]}"; do
     fi
 done
 
-echo "--- Deployment Complete ---"
-echo "Your old configurations are backed up in: $BACKUP_DIR"
-echo "You can now reload Hyprland (SUPER+SHIFT+R or log out/in)."
+tar -xvf assets/themes/Catppuccin-Mocha.tar.xz -C /usr/share/themes/
+tar -xvf assets/icons/Tela-circle-dracula.tar.xz -C /usr/share/icons/
+
