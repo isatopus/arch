@@ -21,7 +21,7 @@ rustup default stable
 mkdir code && cd code
 uv venv .venv
 source .venv/bin/activate
-uv pip install pandas numpy scipy sympy scikit-learn matplotlib seaborn markitdown langchain ipywidgets ipykernel iprogress yt-dlp openai requests beautifulsoup4 datasets transformers torch torchvision wandb tokenizers keras tensorflow tensorboard tensorboard-data-server tensorflow-datasets tensorflow_decision_forests tensorflow-hub tensorflow-metadata tensorflow-probability tensorflow-text tensorstore
+uv pip install pandas numpy scipy sympy scikit-learn matplotlib seaborn markitdown langchain ipywidgets ipykernel iprogress yt-dlp openai requests beautifulsoup4 datasets transformers wandb tokenizers keras torch
 bun install -g gemini typescript firebase supabase
 ssh-keygen -t ed25519 -C "isatopus@gmail.com"
 eval "$(ssh-agent -s)"
