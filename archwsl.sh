@@ -10,6 +10,7 @@ su $user
 sudo sed -i 's/^#en_US.UTF-8/en_US.UTF-8/' /etc/locale.gen
 sudo locale-gen
 sudo localectl set-locale LANG=en_US.UTF-8
+export PATH="/home/isatopus/.bun/bin:$PATH" >> .bashrc
 sudo systemctl enable --now docker.service
 echo 'eval "$(starship init bash)"' >> ~/.bashrc
 sudo pacman -S --needed git base-devel
