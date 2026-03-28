@@ -1,5 +1,5 @@
 pacman -Syu --noconfirm
-pacman -S --noconfirm base-devel git curl nano sudo which less man-db man-pages bash-completion btop tree 7zip openssh net-tools iproute2 nerd-fonts starship python uv rustup sqlite tldr ffmpeg gcc docker docker-compose git git-lfs less curl bun pandoc opentofu azure-cli tesseract tesseract-data-por tesseract-data-eng 
+pacman -S --noconfirm base-devel git curl nano sudo which less man-db man-pages bash-completion btop tree 7zip openssh net-tools iproute2 cuda nerd-fonts starship python uv rustup sqlite tldr ffmpeg gcc docker docker-compose git git-lfs less curl bun pandoc opentofu azure-cli tesseract tesseract-data-por tesseract-data-eng 
 passwd
 EDITOR=nano visudo
 Uncomment this line (remove the `#`):
