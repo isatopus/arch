@@ -2,7 +2,7 @@
 #sudo pacman -Syu ghostty hyprland hyprshot waybar wofi cliphist swaync hyprlock hyprpaper wlogout starship nautilus xdg-desktop-portal-hyprland hyprpolkitagent noto-fonts-emoji noto-fonts-cjk pavucontrol adw-gtk3 adw-gtk-theme qt5-wayland qt6-wayland nwg-look Qt5 Qt6 Settings archlinux-xdg-menu nvidia-open nvidia-settings nvidia-container-toolkit pipewire wireplumber pamixer brightnessctl nerdfonts nano bluez blueman networkmanager
 #sudo systemctl enable --now libvirtd.service
 
-sudo pacman -S sddm plasma-meta kate dolphin
+sudo pacman -S sddm plasma-meta kate dolphin ghostty1
 sudo enable --now sddm.service 
 sudo pacman -S zathura zathura-pdf-mupdf mpv 7zip python uv rustup sqlite btop tldr ffmpeg tailscale gcc docker docker-compose git git-lfs less curl noto-fonts-emoji noto-fonts-cjk starship bun pandoc opentofu azure-cli tesseract tesseract-data-por tesseract-data-eng calmav
 
