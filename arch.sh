@@ -4,7 +4,7 @@
 
 sudo pacman -S sddm plasma-meta kate dolphin ghostty
 sudo enable --now sddm.service 
-sudo pacman -S zathura zathura-pdf-mupdf mpv 7zip python uv rustup sqlite btop tldr ffmpeg tailscale gcc docker docker-compose git git-lfs less curl noto-fonts-emoji noto-fonts-cjk starship bun pandoc opentofu azure-cli tesseract tesseract-data-por tesseract-data-eng calmav
+sudo pacman -S zathura zathura-pdf-mupdf mpv 7zip python uv rustup sqlite btop tldr ffmpeg tailscale gcc docker docker-compose git git-lfs less curl noto-fonts-emoji noto-fonts-cjk starship bun pandoc opentofu azure-cli tesseract tesseract-data-por tesseract-data-eng calmav verilator 
 
 cd documents
 mkdir code && cd code
@@ -17,7 +17,7 @@ sudo pacman -S --needed git base-devel
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
 makepkg -si
-yay -S visual-studio-code-bin google-chrome ttf-ms-win11-auto opentabletdriver solaar unityhub oss-cad-suite-build-bin
+yay -S visual-studio-code-bin google-chrome ttf-ms-win11-auto opentabletdriver solaar unityhub oss-cad-suite-build-bin gowin-eda-edu-ide
 
 sudo usermod -aG docker $user
 sudo systemctl enable --now opentabletdriver.service
