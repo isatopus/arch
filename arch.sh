@@ -17,7 +17,7 @@ sudo pacman -S --needed git base-devel
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
 makepkg -si
-yay -S visual-studio-code-bin google-chrome ttf-ms-win11-auto opentabletdriver solaar unityhub vivado
+yay -S visual-studio-code-bin google-chrome ttf-ms-win11-auto opentabletdriver solaar unityhub oss-cad-suite-build-bin
 
 sudo usermod -aG docker $user
 sudo systemctl enable --now opentabletdriver.service
