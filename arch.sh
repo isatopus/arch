@@ -4,7 +4,7 @@
 
 sudo pacman -S sddm plasma-meta kate dolphin ghostty
 sudo enable --now sddm.service 
-sudo pacman -S zathura zathura-pdf-mupdf mpv 7zip python uv rustup sqlite btop tldr ffmpeg tailscale gcc docker docker-compose git git-lfs less curl noto-fonts-emoji noto-fonts-cjk starship bun pandoc opentofu azure-cli tesseract tesseract-data-por tesseract-data-eng calmav verilator 
+sudo pacman -S zathura zathura-pdf-mupdf mpv 7zip python uv rustup sqlite btop tldr ffmpeg tailscale gcc docker docker-compose git git-lfs less curl noto-fonts-emoji noto-fonts-cjk starship bun pandoc opentofu azure-cli tesseract tesseract-data-por tesseract-data-eng calmav 
 
 cd documents
 mkdir code && cd code
