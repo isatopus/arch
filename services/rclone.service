@@ -1,0 +1,20 @@
+[Unit]
+Description=RClone Mount Service
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=notify
+ExecStart=/usr/bin/rclone mount gdrive: /home/isatopus/Documents/drive/ \
+  --config=/home/isatopus/.config/rclone/rclone.conf \
+  --vfs-cache-mode writes \
+  --vfs-cache-max-age 24h \
+  --vfs-cache-max-size 10G \
+  --umask 002
+ExecStop=/bin/fusermount -u /home/isatopus/Documents/drive/
+Restart=on-failure
+User=isatopus
+Group=isatopus
+
+[Install]
+WantedBy=multi-user.target

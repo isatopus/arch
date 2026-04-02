@@ -1,0 +1,18 @@
+[Unit]
+Description=Mount Rclone Remote Filesystem
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=isatopus
+WorkingDirectory=/home/isatopus
+ExecStart=/usr/bin/rclone mount isatopus: /home/isatopus/Documents/isatopus
+ExecStop=/bin/fusermount -u /home/isatopus/Documents/isatopus
+KillMode=none
+Restart=on-failure
+TimeoutStopSec=15
+
+[Install]
+WantedBy=multi-user.target
+

@@ -1,0 +1,11 @@
+#   code-tunnel.service
+[Unit]
+Description=code-service
+After=network.target
+[Service]
+Type=simple
+Restart=always
+RestartSec=5s
+ExecStart=/bin/bash -c "code tunnel"
+[Install]
+WantedBy=multi-user.target
